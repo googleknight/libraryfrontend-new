@@ -1,0 +1,29 @@
+.ErrorModal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    background-color: #f9883a;
+    width:80vh;
+    height:50vh;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.ErrorModal-text{
+    font-family: Helvetica;
+    font-size: 2em;
+    display: flex;
+    flex:0.5;
+}
+.ErrorModal-reload-button-container{
+    display: flex;
+    flex-grow: 2;
+    width:10vh;
+    height:10vh;
+}
+.ErrorModal-reload-button{
+    width:10vh;
+    height:10vh;
+    background-size: 100%;
+    background-image: url('./load.png')
+}

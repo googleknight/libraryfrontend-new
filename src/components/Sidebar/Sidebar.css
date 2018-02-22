@@ -1,0 +1,19 @@
+.sidebar{
+    display:flex;
+    flex:0.35;
+    background-color: #2e3a48;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar-heading{
+    display:flex;
+    color:white;
+    
+}
+.sidebar-tools{
+    width:65%;
+    height:10%;
+    padding: 0 0 15px 0;
+}

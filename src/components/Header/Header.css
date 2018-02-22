@@ -1,0 +1,17 @@
+.heading-container{
+    font-family: Helvetica;
+    border-radius: 0px 0px 10px 0px;
+    width:25vh;
+    height:8vh;
+    background-color: #9f4141;
+    font-size: 1.7em;
+    padding: 0 0 0 10px;
+    color:white;
+    box-sizing: border-box;
+}
+.heading{
+    text-decoration: underline;
+}
+.heading-bigtext{
+    font-size: 1.3em;
+}
