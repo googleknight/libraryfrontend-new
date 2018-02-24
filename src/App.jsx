@@ -17,8 +17,7 @@ class App extends Component {
     fetch('/mylibrary/bookswithlikes')
       .then(response => response.json())
       .then((responseObj) => {
-        if (responseObj.data > 0) {
-          console.log(responseObj);
+        if (responseObj.statusCode === 200) {
           this.setState({
             homepage: true,
             books: responseObj.data,
@@ -30,7 +29,6 @@ class App extends Component {
     fetch('/mylibrary/bookswithlikes', { method: 'POST' })
       .then(response => response.json())
       .then((responseObj) => {
-        console.log(responseObj.data);
         this.setState({
           homepage: true,
           books: responseObj.data,
@@ -44,7 +42,7 @@ class App extends Component {
           <Sidebar />
           <div className="App-body">
             <Header />
-
+            <BookShelf books={this.state.books} />
           </div>
         </div>
       );

@@ -1,0 +1,15 @@
+.BookShelf-author-title{
+    font-family: Helvetica;
+    font-style: normal;
+    font-size:1.7em;
+    padding: 0px 0px 0px 5px;
+}
+.BookShelf-bookslist-container{
+    background-color: #f9883a;
+    max-width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height:fit-content;
+}
