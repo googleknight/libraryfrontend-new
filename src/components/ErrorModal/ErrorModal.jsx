@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './ErrorModal.css';
 
 const ErrorModal = props => (
@@ -11,5 +12,12 @@ const ErrorModal = props => (
   </div>
 );
 
-export default ErrorModal;
 
+ErrorModal.propTypes = {
+  callbackFromApp: PropTypes.func,
+};
+
+ErrorModal.defaultProps = {
+  callbackFromApp: () => null,
+};
+export default ErrorModal;

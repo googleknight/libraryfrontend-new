@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Book from '../Book/Book';
 import './BookShelf.css';
 
@@ -21,16 +22,13 @@ class BookShelf extends Component {
       toBeRendered.push(<div
         key={index + 10}
         className="BookShelf-author-title"
-      >
-        <p>{authors[index]}</p>
+      ><p>{authors[index]}</p>
       </div>);
       let key = (index + 100) * Object.values(books)[index].length;
       const booksList = Object.values(books)[index].map((book) => {
         key -= 1;
         return (<Book key={key} book={book} callBackFromBookShelf={BookShelf.handleLikes} />);
       });
-
-
       toBeRendered.push(<div key={key - 1}className="BookShelf-bookslist-container">{booksList}</div>);
     }
     return toBeRendered;
@@ -43,5 +41,13 @@ class BookShelf extends Component {
     );
   }
 }
+
+BookShelf.propTypes = {
+  books: PropTypes.shape,
+};
+
+BookShelf.defaultProps = {
+  books: {},
+};
 
 export default BookShelf;

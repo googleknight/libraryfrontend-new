@@ -1,38 +1,93 @@
 .Book{
     display: flex;
     flex-direction: column;
-    height:40vh;
-    width: 30vh;
-    margin: 10vh;
-    align-self: center;
     box-sizing: border-box;
-    border-radius: 10px;
+    height:260px;
+    width: 220px;
+    margin: 2vw 6vw 2vw 3vw;
+    align-self: center;
+    border-radius: 20px;
     box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.15);
     background-color: white;
 }
 
 .Book-upperBox-picture{
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     width: 100%;
     height:100%;
+    box-sizing: border-box;
 }
 .Book-upperBox{
     width: 100%;
-    height: 50%;
-    border-radius: 10px;
+    flex:1;
+    display:flex;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 .Book-lowerBox{
     display:flex;
+    flex:1;
     flex-direction: column;
     padding-left:10px;
     box-sizing: border-box;
+    justify-content: flex-start;
     margin:10px 15px 10px 1px; 
 }
 .Book-author{
+    box-sizing: border-box;
     display:flex;
     align-self: flex-end;
     text-transform: uppercase;
+    position: relative;
+    top:-70px;
+    font-size: 11px;
+    font-weight: bold;
+    flex:1;
 }
 .Book-like-button{
+    
     cursor: pointer;
+    border-radius: 50%;
+    background-color: #e61811;
+    width:40px;
+    height:40px;
+    position: relative;
+    top:-25px;
+    align-self: flex-end;
+    background: #e41911;
+}
+.Book-unlike-button{
+    
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #7b7b7b;
+    width:40px;
+    height:40px;
+    position: relative;
+    top:-25px;
+    align-self: flex-end;
+    background: #7b7b7b;
+}
+.material-icons{
+    font-size: 25px;
+    margin-left:7px;
+    margin-top:6px;
+    color:white;
+}
+.Book-rating{
+    font-size: 1.5em;
+    box-sizing: border-box;
+    position: relative;
+    top:-60px;
+    flex:2;
+    font-weight: 100;
+    color: rgb(90,90,90);
+}
+.Book-title{
+    font-weight: bold;
+    box-sizing: border-box;
+    flex:1;
+    position: relative;
+    top:-30px;
+    font-size:12px;
 }
